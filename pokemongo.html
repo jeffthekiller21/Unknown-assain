@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>I like turtles</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8">
+	<title>Scenery</title>
+	<canvas id="myCanvas" width = "800px" height="500px"></canvas>
+	<script type="text/javascript">
+	function draw() {
+		var c = document.getElementById("myCanvas");
+		var ctx = c.getContext("2d");
+
+		//Triangle
+		ctx.beginPath();
+		ctx.strokestyle="blue";
+		ctx.moveTo(75,0 ); 
+		ctx.lineTo(0, 100);
+		ctx.lineTo(150, 100);
+		ctx.closePath();
+		ctx.stroke();
+		ctx.fillStyle = "yellow"
+		ctx. fill();
+
+
+		ctx.beginPath
+		ctx.arc(200,200,20,0,6.28)
+		ctx.stroke();
+		ctx.fillStyle = "red";
+		ctx.fill();
+
+		ctx.fillStyle = "green"
+		ctx
+	</script>
+	}
 
 </head>
-<body>
-<h1>http://orteil.dashnet.org/cookieclicker/</h1>
-<h2>Hello my name is jeff</h2>
-<canvas id="myCanvas" width = "300" height="300"></canvas>
+<body onLoad="draw()">
 
-<script type="text/javascript">
-    var c = document.getElementById("myCanvas");
-    var ctx = c.getContext("2d");
-    // ctx.moveTo(0,0);
-    // ctx.lineTo(200,100)
-    // ctx.stroke();
-
-    ctx.fillStyle = "rgb(0,100,100)";
-    ctx.fillRect(100,100,100,100);
-    ctx.strokeRect(80,80,140,140);
-
-    </script>
 </body>
 </html>
